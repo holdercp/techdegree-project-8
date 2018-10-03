@@ -1,0 +1,27 @@
+{
+  "name": "techdegree-project-8",
+  "version": "1.0.0",
+  "description": "Practice using Gulp to automate dev tasks and build for production.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "./node_modules/.bin/gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holdercp/techdegree-project-8.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "holdercp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/holdercp/techdegree-project-8/issues"
+  },
+  "homepage": "https://github.com/holdercp/techdegree-project-8#readme"
+}
