@@ -8,6 +8,7 @@ var sass = require('gulp-sass');
 var smaps = require('gulp-sourcemaps');
 var imagemin = require('gulp-imagemin');
 var del = require('del');
+var bs = require('browser-sync');
 
 var DEST = 'dist';
 
@@ -60,12 +61,14 @@ gulp.task(
   })
 );
 
+gulp.task('browserSync', function browserSync() {
+  bs.init({ server: { baseDir: './' } });
+});
+
 gulp.task('clean', function clean() {
   return del(DEST);
 });
 
 gulp.task('build', gulp.parallel('scripts', 'styles', 'images'));
 
-gulp.task('default', function() {
-  // place code for your default task here
-});
+gulp.task('default', gulp.series('build', 'browserSync'));

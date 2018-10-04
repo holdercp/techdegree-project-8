@@ -19,7 +19,7 @@ The build process must fulfill the following criteria:
 - [x] As a developer, I should be able to run the gulp images command at the command line to optimize the size of the project’s JPEG and PNG files, and then copy those optimized images to the dist/content folder.
 - [x] As a developer, I should be able to run the gulp clean command at the command line to delete all of the files and folders in the dist folder.
 - [x] As a developer, I should be able to run the gulp build command at the command line to run the clean, scripts, styles, and images tasks with confidence that the clean task completes before the other commands.
-- [ ] As a developer, I should be able to run the gulp command at the command line to run the build task and serve my project using a local web server.
+- [x] As a developer, I should be able to run the gulp command at the command line to run the build task and serve my project using a local web server.
 
 ### Extra Credit
 
