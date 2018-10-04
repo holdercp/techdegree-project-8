@@ -7,6 +7,7 @@ var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var smaps = require('gulp-sourcemaps');
 var imagemin = require('gulp-imagemin');
+var del = require('del');
 
 var DEST = 'dist';
 
@@ -36,6 +37,10 @@ gulp.task('images', function images() {
     .src('images/*')
     .pipe(imagemin())
     .pipe(gulp.dest(DEST + '/content'));
+});
+
+gulp.task('clean', function clean() {
+  return del(DEST);
 });
 
 gulp.task('default', function() {
