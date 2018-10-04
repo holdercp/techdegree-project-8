@@ -1,5 +1,13 @@
 # Using Gulp to Build a Front End Website
 
+## Get Up and Running
+
+This project is using Gulp 4 and it is included in the dev dependencies. Run `npm install`. If you are using the local Gulp included in the dependencies, then you will need to preface your Gulp commands with `./node_modules/.bin/gulp`. For example, if I wanted to run the default Gulp task I would run `./node_modules/.bin/gulp`. If I wanted to run the `build` task, I would run `./node_modules/.bin/gulp build`.
+
+If you have a global version of Gulp on your machine, you can run the commands as normal. You will need Gulp 4 though.
+
+---
+
 In this project you’ll be provided a website with HTML, SCSS, JPEGs, PNGs and JavaScript files. You’ll be required to set up a Gulp build process to prepare the website for deployment.
 
 The build process must fulfill the following criteria:
