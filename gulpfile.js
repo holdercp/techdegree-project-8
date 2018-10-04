@@ -6,6 +6,7 @@ var rename = require('gulp-rename');
 var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var smaps = require('gulp-sourcemaps');
+var imagemin = require('gulp-imagemin');
 
 var DEST = 'dist';
 
@@ -28,6 +29,13 @@ gulp.task('styles', function styles() {
     .pipe(rename({ dirname: 'styles', basename: 'all', extname: '.min.css' }))
     .pipe(smaps.write('./'))
     .pipe(gulp.dest(DEST));
+});
+
+gulp.task('images', function images() {
+  return gulp
+    .src('images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest(DEST + '/content'));
 });
 
 gulp.task('default', function() {
